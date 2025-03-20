@@ -32,4 +32,6 @@ public class Libro implements Imprimible{
         }
         return sb.toString();
     }
+
+
 }
