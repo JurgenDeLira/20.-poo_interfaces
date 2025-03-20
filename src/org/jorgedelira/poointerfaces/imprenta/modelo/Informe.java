@@ -1,6 +1,6 @@
 package org.jorgedelira.poointerfaces.imprenta.modelo;
 
-public class Informe extends Hoja{
+public class Informe extends Hoja implements Imprimible{
 
     private String autor;
     private String revisor;
@@ -14,7 +14,7 @@ public class Informe extends Hoja{
     @Override
     public String imprimir() {
         return "Informe escrito por: " + autor
-                + "Revisado por: " + revisor
+                + " Revisado por: " + revisor
                 +"\n" + this.contenido;
     }
 }
